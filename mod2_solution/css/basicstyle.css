@@ -1,0 +1,129 @@
+/*basic style*/
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    h1 {
+       margin-bottom: 15px;
+    text-align: center;
+    color: #1c1c1c;
+    font-size: 50px;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 90%;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        border: 1px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .sub1 {
+        float: right;
+        color: black;
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        width: 100px;
+        background-color: pink;
+        margin: -1px -1px 0px;
+        padding: 5px;
+        border: 1px solid black;
+
+    }
+
+    .sub2 {
+        float: right;
+        color: black;
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        width: 100px;
+        background-color: lightgreen;
+        margin: -1px -1px 0px;
+        padding: 5px;
+        border: 1px solid black;
+
+    }
+
+    .sub3 {
+        float: right;
+        color: black;
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        width: 100px;
+        background-color: yellow;
+        margin: -1px -1px 0px;
+        padding: 5px;
+        border: 1px solid black;
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 3px ;
+        height: 150px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .col-lg-4, .col-lg-8, .col-lg-12 {
+            float:left;
+        }
+        .col-lg-4{
+            width: 33.33%;
+        }
+        .col-lg-8{
+            width: 66.66%;
+        }
+        .col-lg-12{
+            width:100%;
+        }
+    }
+
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .col-md-6, .col-md-12 {
+            float: left;
+        }
+        .col-md-6{
+            width: 50.0%;
+        }
+        .col-md-12{
+            width: 100%
+        }
+    }
+
+    @media (max-width: 767px){
+        .col-sm-12 {
+            float: left;
+            width:100%;
+        }
+    }
